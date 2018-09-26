@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-bold-webfont.woff2') format('woff2'), url('../fonts/miso-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url('../fonts/miso-webfont.woff2') format('woff2'), url('../fonts/miso-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #fdde7e;
+	font-family: "Miso", sans-serif;
+
+}
+
+body, html {
+	min-height: 100%;
+}
+
+html {
+	height: 100%;
+}
+/* Layout */
+.ba-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+	justify-content: space-evenly;
+	padding-top: 50px;
+}
+
+
+.ba-card {
+    background: #fff;
+    padding: 40px 80px;
+    text-align: center;
+    flex-basis: 360px;
+}
+
+.ba-card--bronze, .ba-card--silver {
+	margin: 20px 0;
+}
+
+.ba-card--gold {
+	margin: 0 30px;
+}
+
+.ba-card--gold > h1 {
+	margin-top: 60px;
+}
+
+.ba-card-title {
+	font-family: Miso;
+	color:  #02995b;
+	font-size: 70px;/* Approximation due to font substitution */
+	font-weight: 700;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: center;
+}
+
+.ba-card-title:before {
+	content: "$";
+}
+
+.ba-cup-img {
+	width: 135px;
+}
+
+.ba-card > h1 {
+	color:  #333333;
+	font-size: 56px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+}
+
+.ba-card > small {
+	font-family: Lato;
+	color:  #333333;
+	font-size: 20px;/* Approximation due to font substitution */
+	font-weight: 300;
+	line-height: 26px;/* Approximation due to font substitution */
+}
